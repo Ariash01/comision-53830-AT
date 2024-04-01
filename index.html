@@ -5,42 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOCADO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="header-barra-inicio">
+        <div class="header-barra-inicio">
             <h1 id="ir-al-top">BOCADO</h1>
-            <ul class="barra-inicio">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/menu.html">Menú</a></li>
-                <li><a href="./pages/ingredientes.html">Ingredientes</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        </div>
+        <div class="menuhamburguesa">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle"> <i class="material-icons">menu</i></label>
+            <nav>
+                <ul class="barra-inicio">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/menu.html">Menú</a></li>
+                    <li><a href="./pages/ingredientes.html">Ingredientes</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="presentacion-hamburguesa">
+        <div class="presentacion-hamburguesa">
             <h2>CONOCE NUESTRAS HAMBURGUESAS ESTRELLAS</h2>
-            <div class="contenedor-hamburguesa">
-                <div class="card-hamburguesas">
-                    <h3>Le Croissant</h3>
-                    <img src="./assets/img/HamburguesaLeCroissant.jpg" alt="Le-Croissant">
-                </div>
-                <div class="card-hamburguesas">
-                    <h3>La Clásica</h3>
-                    <img src="./assets/img/HamburguesaLaClasica.jpg" alt="La-Clásica">
-                </div>
-                <div class="card-hamburguesas">
-                    <h3>Double Cheesy</h3>
-                    <img src="./assets/img/HamburguesaDoubleCheesy.jpg" alt="Double-Cheesy">
-                </div>
-                <div class="card-hamburguesas">
-                    <h3>Double Steak</h3>
-                    <img src="./assets/img/HamburguesaDoubleSteak.jpg" alt="Double-Steak">
-                </div>
+        </div>
+        <section class="contenedor-hamburguesa">
+            <div class="card-hamburguesas">
+                <h3>Le Croissant</h3>
+                <img src="./assets/img/HamburguesaLeCroissant.jpg" alt="Le-Croissant">
+            </div>
+            <div class="card-hamburguesas">
+                <h3>La Clásica</h3>
+                <img src="./assets/img/HamburguesaLaClasica.jpg" alt="La-Clásica">
+            </div>
+            <div class="card-hamburguesas">
+                <h3>Double Cheesy</h3>
+                <img src="./assets/img/HamburguesaDoubleCheesy.jpg" alt="Double-Cheesy">
+            </div>
+            <div class="card-hamburguesas">
+                <h3>Double Steak</h3>
+                <img src="./assets/img/HamburguesaDoubleSteak.jpg" alt="Double-Steak">
             </div>
         </section>
         <div class="contenedor-enlace">
