@@ -1,0 +1,41 @@
+.menu h2{
+    @include tipografia("Saira Semi Condensed", bold, normal, 50px, black, none, left, none);
+    margin-left: 30px;
+    padding-top: 30px;
+}
+
+.presentacion-menu{
+    @include tamano;
+    padding-top: 10px;
+    h3{
+        @include tipografia("Saira Semi Condensed", 300, normal, 30px, black, none, left, 5px solid #E2DCC8);
+        margin-left: 30px;
+    }
+    p{
+        @include tipografia("Saira Semi Condensed", bold, normal, 18px, #0F3D3E, none, center, none);
+        padding: 15px;
+    }
+}
+
+.contenedor-menu{
+    @include tamano;
+    max-width: 1400px; //REVISAR SI ES NECESARIO O NO!
+    @include displayType(flex, wrap, none, center);
+    margin: auto;
+}
+
+.contenedor-menu-pollo{
+    @include tamano;
+    max-width: 1600px;
+    @include displayType(flex, wrap, none, center);
+    text-align: justify;
+    margin: auto;
+}
+
+.contenedor-menu-bebidas{
+    @include tamano;
+    max-width: 1600px;
+    @include displayType(flex, wrap, none, center);
+    margin: auto;
+}
+

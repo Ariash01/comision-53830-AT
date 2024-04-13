@@ -1,0 +1,38 @@
+.barra-inicio{
+    @include displayType(flex, none, row, none);
+    text-align: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-image: url("../assets/img/hamburguesaprincipal1.jpg");
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    
+    li {
+        height: 100%;
+        width: 100%;
+        margin-top: 10px;
+        a{
+            @include tipografia("Roboto Mono", normal, normal, 18px, white, none, none, none);
+            text-decoration: none;
+        }
+    }
+}
+
+.barra{
+    @include displayType(flex, none, row, center);
+    justify-content: space-between;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    align-items: center;
+    background-color: map-get($colores , colorPrincipalyH2 );
+    li {
+        height: auto;
+        width: 100%;
+        a{
+            @include tipografia("Roboto Mono", normal, normal, 18px, white, none, none, none);
+            text-decoration: none;
+        }
+    }
+}

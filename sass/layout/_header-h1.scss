@@ -1,0 +1,10 @@
+.header-barra-inicio{
+    @include tamano;
+    text-align: center;
+    background-color: map-get($colores, colorSecundario);
+    h1 {
+        @include tipografia("Poiret One", normal, normal, 80px, white, none, none, none);
+        background-color: map-get($colores, colorBackground);
+        margin: 0;
+    }
+}

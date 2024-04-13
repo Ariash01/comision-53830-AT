@@ -1,0 +1,40 @@
+footer {
+    @include tamano;
+    background-color: map-get($colores, colorPrincipalyH2);
+}
+
+.contenedor-footer{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .contenedor-contactos{
+        width: 400px;
+        height: 300px;
+        margin: 10px;
+        h2{
+            @include tipografia("Roboto Mono", 250, normal, 32px, white, none, none, 2px solid white);
+            padding-bottom: 5px;
+            //display:inline-block
+            }
+        p{
+            @include tipografia("Saira Semi Condensed", 150, normal, 22px, #F1F1F1, 10px, none, none);
+        }
+        ul{
+            li{
+                text-decoration: none;
+                margin-top: 20px;
+                a{
+                    padding: 5px;
+                }
+            }
+        }
+        iframe {
+            padding-top: 10px;
+            width: 400px;
+            height: 200px;
+        }
+    }
+}

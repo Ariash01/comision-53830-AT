@@ -1,1108 +1,766 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Poiret+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none; }
 
 #menu-toggle, .menuhamburguesa label, .menuhamburguesa2 label {
-    display: none;
-}
+  display: none; }
 
-header {
-    width: 100%;
-}
-
-.barra {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #0F3D3E;
-    width: 100%;
-    height: 35px;
-    text-align: center;
-    align-items: center;
-}
-
-.barra li {
-    height: auto;
-    width: 100%;
-}
-
-.barra li a {
-    text-decoration: none;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 100;
-    font-style: normal;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-}
-
-main {
-    background-color: #F1F1F1;
-    width: 100%;
-}
-
-footer {
-    background-color: #0F3D3E;
-}
-
-.header-barra-inicio{
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    background-color: #F1F1F1;
-}
-
-.header-barra-inicio h1 {
-    color:white;
-    background-color:black;
-    font-family: "Poiret One", sans-serif;
-    font-weight: 400;
+.header-barra-inicio {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #F1F1F1; }
+  .header-barra-inicio h1 {
+    font-family: "Poiret One";
+    font-weight: normal;
     font-style: normal;
     font-size: 80px;
-    margin: 0;
-}
-
-
-.barra-inicio {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
-    background-repeat: no-repeat;
-    background-image: url("../assets/img/hamburguesaprincipal1.jpg");
-    width: 100%;
-    height: 1000px;
-    background-size: cover;
-}
-
-.barra-inicio li {
-    height: auto;
-    width: 100%;
-}
-
-.barra-inicio li a {
-    text-decoration: none;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 100;
-    font-style: normal;
     color: white;
-    font-size: 18px;
-}
+    margin-top: none;
+    text-align: none;
+    border-bottom: none;
+    background-color: black;
+    margin: 0; }
+
+main {
+  background-color: #F1F1F1;
+  width: 100%; }
 
 .presentacion-hamburguesa {
-    width: 100%;
-    height: 100%;
-}
-
-.presentacion-hamburguesa h2 {
-    font-family: "Roboto Mono", monospace;
+  height: 100%;
+  width: 100%; }
+  .presentacion-hamburguesa h2 {
+    font-family: "Roboto Mono";
     font-weight: bold;
     font-style: normal;
-    color: #0F3D3E;
-    font-size: 30px;
+    font-size: 40px;
+    color: black;
+    margin-top: none;
     text-align: center;
-    border-bottom: 5px solid #decc96;
-    padding-top: 50px;
-}
+    border-bottom: 4px solid #decc96;
+    padding-top: 50px; }
 
 .contenedor-hamburguesa {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contenedor-hamburguesa .card-hamburguesas {
-    width: 300px;
-    height: 320px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 80px 50px 80px 50px;
-    transition: all 0.25s;
-    background-color: white;
-    border: 1px solid black;
-    text-align: center;
-}
-
-.contenedor-hamburguesa .card-hamburguesas:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.contenedor-hamburguesa .card-hamburguesas h3 {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #0F3D3E;
-    font-size: 30px;
-    margin-top: 15px;
-}
-
-.contenedor-hamburguesa .card-hamburguesas img {
-    max-width: 100%;
-    max-height: 100%;
-    background-size: contain;
-    padding: 15px;
-}
-
-.contenedor-footer {
-    width: 100%;
-    height: 320px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}   
-
-.contenedor-contactos {
-    width: 400px;
-    height: 300px;
-}
-
-.contenedor-contactos h2 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 250;
-    font-style: normal;
-    color: white;
-    font-size: 30px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid white;
-}
-
-.contenedor-contactos p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: 150;
-    font-style: normal;
-    color: #F1F1F1;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.contenedor-contactos ul li {
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.contenedor-contactos a {
-    padding: 5px;
-}
-
-.contenedor-contactos iframe {
-    padding-top: 10px;
-    width: 400px;
-    height: 200px;
-}
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: none;
+  justify-content: center; }
 
 .menu h2 {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: bold;
-    font-style:normal ;
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-    text-align: left;
-    margin-left: 30px;
-}
+  font-family: "Saira Semi Condensed";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 50px;
+  color: black;
+  margin-top: none;
+  text-align: left;
+  border-bottom: none;
+  margin-left: 30px;
+  padding-top: 30px; }
 
 .presentacion-menu {
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
-}
-
-.presentacion-menu h3 {
-    font-family: "Saira Semi Condensed", sans-serif;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px; }
+  .presentacion-menu h3 {
+    font-family: "Saira Semi Condensed";
     font-weight: 300;
-    font-style:normal ;
-    color: black;
+    font-style: normal;
     font-size: 30px;
+    color: black;
+    margin-top: none;
     text-align: left;
-    margin-left: 30px;
-    border-bottom: 5px solid #E2DCC8; 
-}
-
-.presentacion-menu p {
-    font-family: "Saira Semi Condensed", sans-serif;
+    border-bottom: 5px solid #E2DCC8;
+    margin-left: 30px; }
+  .presentacion-menu p {
+    font-family: "Saira Semi Condensed";
     font-weight: bold;
     font-style: normal;
-    color: #0F3D3E;
     font-size: 18px;
-    padding: 15px;
+    color: #0F3D3E;
+    margin-top: none;
     text-align: center;
-}
+    border-bottom: none;
+    padding: 15px; }
 
 .contenedor-menu {
-    width: 100%;
-    max-width: 1400px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
-
-.contenedor-menu .card-carne {
-    width: 300px;
-    height: 420px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 50px 30px 50px 30px;
-    transition: all 0.25s;
-    background-color: white;
-    border: 1px solid black;
-}
-
-.contenedor-menu .card-carne:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.contenedor-menu .card-carne h4 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
-    color: #0F3D3E;
-    font-size: 26px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.contenedor-menu .card-carne img {
-    max-width: 100%;
-    max-height: 100%;
-    background-size: contain;
-    padding: 15px;
-}
-
-.contenedor-menu .card-carne p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #0F3D3E;
-    font-size: 18px;
-    padding: 15px;
-    text-align: justify;
-}
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: none;
+  justify-content: center;
+  margin: auto; }
 
 .contenedor-menu-pollo {
-    width: 100%;
-    max-width: 1600px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: justify;
-    margin: auto;
-}
-
-.contenedor-menu-pollo .card-pollo {
-    width: 300px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 50px 30px 50px 30px;
-    transition: all 0.25s;
-    background-color: white;
-    border: 1px solid black;
-}
-
-.contenedor-menu-pollo .card-pollo:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.contenedor-menu-pollo .card-pollo h4 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
-    color: #0F3D3E;
-    font-size: 26px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.contenedor-menu-pollo .card-pollo img {
-    max-width: 100%;
-    max-height: 100%;
-    background-size: contain;
-    padding: 15px;
-}
-
-.contenedor-menu-pollo .card-pollo p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: black;
-    font-size: 18px;
-    padding: 15px;
-    text-align: justify;
-}
-
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: none;
+  justify-content: center;
+  text-align: justify;
+  margin: auto; }
 
 .contenedor-menu-bebidas {
-    width: 100%;
-    max-width: 1600px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: none;
+  justify-content: center;
+  margin: auto; }
 
-.card-bebidas {
-    width: 250px;
-    height: 340px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 50px 30px 50px 30px;
-    transition: all 0.25s;
-    background-color: white;
-    border: 1px solid black;
-}
-
-.card-bebidas:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-bebidas h4 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
+.cortes {
+  height: 100%;
+  width: 100%; }
+  .cortes h2 {
+    font-family: "Saira Semi Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
     color: #0F3D3E;
-    font-size: 26px;
-    margin-top: 20px;
+    margin-top: none;
     text-align: center;
-}
+    border-bottom: 4px solid #decc96;
+    padding-top: 30px; }
+  .cortes p {
+    font-family: "Saira Semi Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    color: black;
+    margin-top: none;
+    text-align: center;
+    border-bottom: none;
+    padding-top: 10px; }
 
-.card-bebidas img {
+.tipos {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "div1 div2" "div3 div4";
+  gap: 20px; }
+
+.div1, .div2, .div3, .div4 {
+  margin: 40px;
+  padding: 40px;
+  grid-area: div1;
+  border: 2px solid #0F3D3E;
+  border-radius: 10px;
+  transition: all 0.25s;
+  background-color: white; }
+  .div1:hover, .div2:hover, .div3:hover, .div4:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  .div1 h3, .div2 h3, .div3 h3, .div4 h3 {
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+    margin-top: none;
+    text-align: none;
+    border-bottom: none; }
+  .div1 p, .div2 p, .div3 p, .div4 p {
+    font-family: "Saira Semi Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    margin-top: none;
+    text-align: justify;
+    border-bottom: none; }
+
+.div2 {
+  grid-area: div2; }
+
+.div3 {
+  grid-area: div3; }
+
+.div4 {
+  grid-area: div4; }
+
+.contenedor-general {
+  height: 100%;
+  width: 100%;
+  background-color: white; }
+  .contenedor-general h2 {
+    font-family: "Saira Semi Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+    color: #0F3D3E;
+    margin-top: 40px;
+    text-align: center;
+    border-bottom: none;
+    justify-content: center; }
+
+.contenedor-historia {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "sub-historia1 imagen-historia" "sub-historia2 imagen-historia";
+  gap: 20px; }
+
+.sub-historia1, .sub-historia2, .imagen-historia {
+  grid-area: sub-historia1;
+  margin-left: 45px;
+  place-items: center; }
+  .sub-historia1 h3, .sub-historia2 h3, .imagen-historia h3 {
+    font-family: "Roboto Mono";
+    font-weight: 250;
+    font-style: normal;
+    font-size: 40px;
+    color: #0F3D3E;
+    margin-top: 40px;
+    text-align: left;
+    border-bottom: 4px solid #decc96; }
+  .sub-historia1 p, .sub-historia2 p, .imagen-historia p {
+    font-family: "Saira Semi Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #0F3D3E;
+    margin-top: 10px;
+    text-align: justify;
+    border-bottom: none; }
+
+.sub-historia2 {
+  grid-area: sub-historia2; }
+
+.imagen-historia {
+  grid-area: imagen-historia;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .imagen-historia .imagen-local {
+    margin-top: 60px;
+    width: 700px;
+    height: 900px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px; }
+
+.mas-nosotros {
+  width: 100%;
+  height: 40px;
+  background-color: white; }
+  .mas-nosotros h2 {
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    color: 0F3D3E;
+    margin-top: 80px;
+    text-align: center;
+    border-bottom: 4px solid #decc96; }
+
+.contenedor {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: none;
+  justify-content: center;
+  margin: auto; }
+
+.contenedor-general-contactos {
+  height: 100%;
+  width: 100%; }
+
+.contactanos-c {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-bottom: 10px solid #decc96; }
+  .contactanos-c h1 {
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    margin-top: 40px;
+    text-align: center;
+    border-bottom: none; }
+  .contactanos-c p {
+    font-family: "Saira Semi Condensed";
+    font-weight: 350;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 10px; }
+
+.formulario {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: center;
+  height: 500px;
+  background-color: white;
+  padding: 50px;
+  margin-bottom: 20px; }
+
+.legend-form {
+  font-family: "Saira Semi Condensed";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+  color: black;
+  margin-top: none;
+  text-align: none;
+  border-bottom: none;
+  padding: 30px;
+  margin-left: 30px; }
+
+.label-form {
+  font-family: "Saira Semi Condensed";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+  margin-top: none;
+  text-align: none;
+  border-bottom: none;
+  padding: 10px;
+  margin-left: 20px; }
+
+.input-form {
+  background-color: #F8F3F3;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  margin: 10px 20px 20px 20px;
+  padding: 10px; }
+
+.boton-enviar {
+  font-family: "Saira Semi Condensed";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  color: black;
+  margin-top: none;
+  text-align: center;
+  border-bottom: none;
+  width: 100px;
+  height: 60px;
+  background-color: #F8F3F3;
+  margin: 20px 50px 20px 280px;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s; }
+  .boton-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+footer {
+  height: 100%;
+  width: 100%;
+  background-color: #0F3D3E; }
+
+.contenedor-footer {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .contenedor-footer .contenedor-contactos {
+    width: 400px;
+    height: 300px;
+    margin: 10px; }
+    .contenedor-footer .contenedor-contactos h2 {
+      font-family: "Roboto Mono";
+      font-weight: 250;
+      font-style: normal;
+      font-size: 32px;
+      color: white;
+      margin-top: none;
+      text-align: none;
+      border-bottom: 2px solid white;
+      padding-bottom: 5px; }
+    .contenedor-footer .contenedor-contactos p {
+      font-family: "Saira Semi Condensed";
+      font-weight: 150;
+      font-style: normal;
+      font-size: 22px;
+      color: #F1F1F1;
+      margin-top: 10px;
+      text-align: none;
+      border-bottom: none; }
+    .contenedor-footer .contenedor-contactos ul li {
+      text-decoration: none;
+      margin-top: 20px; }
+      .contenedor-footer .contenedor-contactos ul li a {
+        padding: 5px; }
+    .contenedor-footer .contenedor-contactos iframe {
+      padding-top: 10px;
+      width: 400px;
+      height: 200px; }
+
+.barra-inicio {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: none;
+  text-align: center;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/hamburguesaprincipal1.jpg");
+  width: 100%;
+  height: 1000px;
+  background-size: cover; }
+  .barra-inicio li {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px; }
+    .barra-inicio li a {
+      font-family: "Roboto Mono";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 18px;
+      color: white;
+      margin-top: none;
+      text-align: none;
+      border-bottom: none;
+      text-decoration: none; }
+
+.barra {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  background-color: #0F3D3E; }
+  .barra li {
+    height: auto;
+    width: 100%; }
+    .barra li a {
+      font-family: "Roboto Mono";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 18px;
+      color: white;
+      margin-top: none;
+      text-align: none;
+      border-bottom: none;
+      text-decoration: none; }
+
+.card-hamburguesas, .card-carne, .card-pollo, .card-bebidas, .card {
+  width: 300px;
+  height: 320px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 80px 50px 80px 50px;
+  transition: all 0.25s;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center; }
+  .card-hamburguesas:hover, .card-carne:hover, .card-pollo:hover, .card-bebidas:hover, .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  .card-hamburguesas h3, .card-carne h3, .card-pollo h3, .card-bebidas h3, .card h3 {
+    font-family: "Saira Semi Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #0F3D3E;
+    margin-top: 15px;
+    text-align: none;
+    border-bottom: none; }
+  .card-hamburguesas img, .card-carne img, .card-pollo img, .card-bebidas img, .card img {
     max-width: 100%;
     max-height: 100%;
     background-size: contain;
-    padding: 15px;
-    border-radius: 8px;
-}
+    padding: 15px; }
 
-.imagen-ingredientes {
-    width: 100%;
-    height: 100%;
-}
-
-.imagen-ingredientes h2 {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
+.card-carne, .card-pollo, .card-bebidas {
+  height: 450px;
+  margin: 50px 30px 50px 30px; }
+  .card-carne h4, .card-pollo h4, .card-bebidas h4 {
+    font-family: "Roboto Mono";
+    font-weight: bold;
     font-style: normal;
+    font-size: 30px;
     color: #0F3D3E;
-    font-size: 60px;
+    margin-top: 20px;
     text-align: center;
-    padding-top: 30px;
-    border-bottom: 4px solid #decc96;
-}
-
-.imagen-ingredientes p {
-    font-family: "Saira Semi Condensed", sans-serif;
+    border-bottom: none; }
+  .card-carne p, .card-pollo p, .card-bebidas p {
+    font-family: "Saira Semi Condensed";
     font-weight: normal;
     font-style: normal;
-    color: black;
-    font-size: 24px;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.tipos {
-    justify-content: center;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "div1 div2"
-    "div3 div4"
-    ;
-    gap: 20px;
-}
-
-.div1 {
-    margin: 40px;
-    padding: 40px;
-    grid-area: div1;
-    border: 2px solid #0F3D3E;
-    border-radius: 10px;
-    transition: all 0.25s;
-    background-color: white;
-}
-
-.div1:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
-}
-
-.div1 h3 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: bold;
-    color: black;
-    font-size: 26px;
-}
-
-.div1 p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: black;
     font-size: 20px;
-    text-align: justify;
-}
-
-.div2 {
-    margin: 40px;
-    padding: 40px;
-    grid-area: div2;
-    border: 2px solid #0F3D3E;
-    border-radius: 10px;
-    transition: all 0.25s;
-    background-color: white;
-}
-
-.div2 p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: black;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.div2 h3 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: bold;
-    color: black;
-    font-size: 26px;
-}
-
-.div2:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
-}
-
-.div3 {
-    margin: 40px;
-    padding: 40px;
-    grid-area: div3;
-    border: 2px solid #0F3D3E;
-    border-radius: 10px;
-    transition: all 0.25s;
-    background-color: white;
-}
-
-.div3 p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: black;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.div3 h3 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: bold;
-    color: black;
-    font-size: 26px;
-}
-
-.div3:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
-}
-
-.div4 {
-    margin: 40px;
-    padding: 40px;
-    grid-area: div4;
-    border: 2px solid #0F3D3E;
-    border-radius: 10px;
-    transition: all 0.25s;
-    background-color: white;
-}
-
-.div4 p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: black;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.div4 h3 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: bold;
-    color: black;
-    font-size: 26px;
-}
-
-.div4:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
-}
-
-
-.imagen-brangus {
-    width: 400px;
-    height: 450px;
-    padding: 120px 20px 20px 20px;
-}
-
-.contenedor-general {
-    background-color: white;
-    width: 100%;
-    height: 1580px;
-}
-
-.historia {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: black;
-    font-size: 40px;
-    text-align: left;
-    padding-top: 30px;
-    padding-left: 60px;
-}
-
-.contenedor-historia {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 350px;
-    padding: 40px;
-}
-
-.sub-historia h3 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 250;
-    font-style: normal;
     color: #0F3D3E;
-    font-size: 40px;
-    text-align: left;
-    padding-top: 2px;
-    padding-left: 20px;
-    border-bottom: 4px solid #decc96;
-}
-
-.sub-historia p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #0F3D3E;
-    font-size: 17px;
-    padding: 15px;
+    margin-top: none;
     text-align: justify;
-}
+    border-bottom: none;
+    padding: 5px 20px 5px 20px;
+    line-height: 1.5; }
 
-.imagen-historia {
-    width: 560px;
-    height: 320px;
-    padding: 80px 20px 20px 20px; 
-}
+.card-pollo {
+  height: 470px; }
 
-.mas-nosotros {
-    width: 100%;
-    height: 40px;
-    background-color: white;
-}
-
-.mas-nosotros h2 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 250;
-    font-style: normal;
-    color: #0F3D3E;
-    font-size: 40px;
-    margin-top: 150px;
-    text-align: center;
-    border-bottom: 4px solid #decc96;
-}
-
-.contenedor {
-    width: 100%;
-    max-width: 1400px;
-    height: 550px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
+.card-bebidas {
+  height: 360px;
+  width: 250px; }
+  .card-bebidas h4 {
+    padding: 5px; }
 
 .card {
-    width: 400px;
-    height: 440px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 50px;
-    transition: all 0.25s;
-    background-color: #f0eee7;
-    margin-top: 80px;
-}
-
-.card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card h2 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 150;
+  width: 450px;
+  height: 500px;
+  margin: 50px;
+  transition: all 0.25s;
+  background-color: white;
+  margin-top: 80px; }
+  .card h2 {
+    font-family: "Roboto Mono";
+    font-weight: 250;
     font-style: normal;
-    color: #0F3D3E;
     font-size: 40px;
+    color: #0F3D3E;
     margin-top: 40px;
     text-align: center;
-}
-
-.card p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: 200;
+    border-bottom: none; }
+  .card p {
+    font-family: "Saira Semi Condensed";
+    font-weight: 280;
     font-style: normal;
-    color:black;
-    font-size: 18px;
-    text-align: justify;
-    padding: 30px;
-}
-
-.contactanos-c {
-    width: 100%;
-    height: 150px;
-    background-color: #F1F1F1;
-    border-bottom: 10px solid #decc96;
-}
-
-.contactanos-c h1 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: bold;
-    font-style: normal;
-    color: black;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 40px;
-    background-color: #F1F1F1;
-}
-
-.contactanos-c p {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: 350;
-    font-style: normal;
-    color:black;
-    font-size: 18px;
-    text-align: center;
-}
-
-.formulario {
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    padding: 50px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.legend-form {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    color:black;
-    font-size: 25px;
-    padding: 30px;
-    margin-left: 30px;
-}
-
-.label-form {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color:black;
     font-size: 20px;
-    padding: 10px;
-    margin-left: 20px;
-}
-
-.input-form {
-    background-color: #F8F3F3;
-    border: none;
-    width: 200px;
-    height: 50px;
-    border-radius: 8px;
-    margin: 10px 20px 20px 20px;
-    padding: 10px;
-}
-
-.boton-enviar {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 15px;
-    width: 100px;
-    height: 60px;
-    background-color: #F8F3F3;
     color: black;
-    margin: 20px 50px 20px 280px;
-    padding: 20px;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.25s;
-}
-
-.boton-enviar:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
+    margin-top: none;
+    text-align: justify;
+    border-bottom: none;
+    padding: 30px; }
 
 .contenedor-enlace {
-    text-align: right;
-    width: auto;
-    height: 60px;
-}
-
-.enlace-top{
-    text-decoration: none;
-    background-color: white;
-    font-family: "Saira Semi Condensed", sans-serif;
+  text-align: right;
+  width: 100%;
+  height: 60px; }
+  .contenedor-enlace .enlace-top {
+    font-family: "Saira Semi Condensed";
     font-weight: normal;
     font-style: normal;
-    color: #0F3D3E;
     font-size: 15px;
+    color: #0F3D3E;
+    margin-top: none;
+    text-align: none;
+    border-bottom: none;
+    text-decoration: none;
+    background-color: white;
     margin-right: 15px;
     padding: 5px;
-    border: 2px solid black;
-}
+    border: 2px solid black; }
 
+@media (max-width: 1440px) and (min-width: 1240px) {
+  .barra-inicio {
+    height: 800px; }
+  .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
+    width: 350px;
+    height: 350px;
+    margin: 20px; }
+  .imagen-historia .imagen-local {
+    width: 600px;
+    margin-right: 10px; }
+  .contenedor-footer .contenedor-contactos {
+    width: 380px;
+    height: 280px; }
+    .contenedor-footer .contenedor-contactos iframe {
+      width: 380px;
+      height: 230px; } }
 
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .barra-inicio {
+    height: 600px; }
+  .presentacion-hamburguesa h2 {
+    font-size: 36px; }
+  .contenedor-hamburguesa {
+    height: 800px; }
+    .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
+      margin: 40px 80px 40px 80px; }
+  .contenedor-historia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imagen-historia imagen-historia" "sub-historia1 sub-historia2";
+    gap: 20px; }
+  .sub-historia1 h3, .sub-historia2 h3, .imagen-historia h3 {
+    font-size: 32px; }
+  .sub-historia2 {
+    margin-right: 45px; }
+  .imagen-historia .imagen-local {
+    width: 500px;
+    height: 600px; }
+  .contenedor-footer .contenedor-contactos {
+    width: 360px;
+    height: 260px; }
+    .contenedor-footer .contenedor-contactos iframe {
+      width: 350px;
+      height: 200px; } }
 
-@media(max-width:1440px) and (min-width:1240px){
-    .barra-inicio {
-        height: 800px;
-    }
-    .contenedor-hamburguesa {
-        height: 900px;
-    }
-    .contenedor-hamburguesa .card-hamburguesas {
-        width: 350px;
-        height: 350px;
-        margin: 40px 50px 40px 50px;
-    }
-    /*PESTANA MENU*/
-    .contenedor-menu .card-carne h4 {
-        font-size: 24px;
-    }
-    .contenedor-menu-pollo .card-pollo h4 {
-        font-size: 24px;
-    }
-    .card-bebidas {
-        width: 250px;
-        height: 350px;
-        margin: 30px 30px 30px 30px;
-    }
-    .contenedor-menu-bebidas .card-bebidas h4 {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width:1239px){
-    .barra-inicio {
-        height: 800px;
-    }
+@media (max-width: 1024px) and (min-width: 744px) {
+  .barra-inicio {
+    height: 550px;
+    background-size: cover; }
     .barra-inicio li a {
-        font-size: 18px;
-    }
-    .presentacion-hamburguesa h2 {
-        font-size: 30px;
-    }
-    .contenedor-hamburguesa {
-        height: 800px;
-    }
-    .contenedor-hamburguesa .card-hamburguesas {
-        width: 300px;
-        height: 300px;
-        margin: 40px 80px 40px 80px;
-    }
-    .contenedor-hamburguesa .card-hamburguesas h3 {
-        font-size: 28px;
-        margin-top: 15px;
-    }
-    .contenedor-contactos {
-        width: 300px;
-    }
-    .contenedor-contactos h2 {
-        font-size: 20px;
-    }
-    .contenedor-contactos iframe {
-        width: 300px;
-    }
+      font-size: 16px;
+      padding: 10px; }
+  .barra {
+    height: 35px;
+    width: 100%; }
+  .presentacion-hamburguesa h2 {
+    font-size: 34px; }
+  .contenedor-hamburguesa {
+    height: 100%; }
+    .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
+      width: 280px;
+      height: 280px;
+      margin: 30px; }
+  .cortes h2 {
+    font-size: 50px; }
+  .cortes p {
+    font-size: 20px; }
+  .div1, .div2, .div3, .div4 {
+    margin: 20px; }
+    .div1 p, .div2 p, .div3 p, .div4 p {
+      font-size: 18px; }
+  .contenedor-footer .contenedor-contactos {
+    width: 320px;
+    height: 200px; }
+    .contenedor-footer .contenedor-contactos h2 {
+      font-size: 22px; }
+    .contenedor-footer .contenedor-contactos p {
+      font-size: 18px; }
+    .contenedor-footer .contenedor-contactos iframe {
+      width: 300px;
+      height: 180px; } }
 
-    /*PESTANA MENU*/
-    .contenedor-menu .card-carne h4 {
-        font-size: 24px;
-    }
-    .contenedor-menu-pollo .card-pollo h4 {
-        font-size: 24px;
-    }
-    .contenedor-menu-bebidas .card-bebidas h4 {
-        font-size: 24px;
-    }
-
-    .contenedor-footer {
-        height: 250px;
-    }
-    .contenedor-contactos {
-        width: 300px;
-        height: 180px;
-    }
-    .contenedor-contactos h2 {
-        font-size: 26px;
-    }
-    .contenedor-contactos p {
-        font-size: 20px;
-    }
-    .contenedor-contactos iframe {
-        width: 300px;
-        height: 150px;
-    }
-
-}
-
-
-@media (max-width:1023px) and (min-width: 744px){
-
-    .barra-inicio {
-        height: 550px;
-        background-size: cover;
-    }
-    /*NAVBAR DEL INICIO*/
-    .barra-inicio li a {
-        padding: 10px;
-        font-size: 16px;
-    }
-    /**NAVBAR DE LAS OTRAS PESTAÑAS*/
-    .barra {
-        height: 35px;
-        width: 100%;
-    }
-    
-    /*FOOTER*/
-    .contenedor-footer {
-        height: 250px;
-    }
-    .contenedor-contactos {
-        width: 200px;
-        height: 150px;
-    }
-    .contenedor-contactos h2 {
-        font-size: 22px;
-    }
-    .contenedor-contactos p {
-        font-size: 18px;
-    }
-    .contenedor-contactos iframe {
-        width: 200px;
-        height: 150px;
-    }
-
-    /*INICIO-HAMBURGUESAS*/
-    .presentacion-hamburguesa h2 {
-        font-size: 24px;
-    }
-    .contenedor-hamburguesa {
-        height: 820px;
-    }
-    .contenedor-hamburguesa .card-hamburguesas {
-        width: 280px;
-        height: 280px;
-        margin: 60px 40px 10px 40px;
-    }
-}
-
-@media (min-width:320px) and (max-width:743px){
-    .header-barra-inicio {
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    }
-    .header-barra-inicio h1 {
-        font-size: 40px;
-    }
-    .barra-inicio {
-        display: none;
-        background-image: none;
-        position: relative;
-        width: 100%;
-        height: 272px;
-        background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-    }
-    .menuhamburguesa {
-        width: 100%;
-        height: 300px;
-        text-align: right;
-        background-image: url("../assets/img/hamburguesaprincipal1.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center; 
-    }
-    .menuhamburguesa label {
-        display: block;
-        cursor: pointer;
-    }
-    #menu-toggle:checked + label + nav .barra-inicio {
-        display: block;
-    }
-    nav {
-        position: relative;
-    }
-    .barra-inicio ul {
-        list-style-type: none;  
-    }
+@media (min-width: 320px) and (max-width: 744px) {
+  .header-barra-inicio h1 {
+    font-size: 40px; }
+  .barra-inicio {
+    justify-content: none;
+    display: none;
+    background-image: none;
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999; }
     .barra-inicio li {
-        padding: 14px 20px;
-    }
-    .barra-inicio li a {
+      height: 42px;
+      padding: 20px; }
+      .barra-inicio li a {
         color: black;
         font-weight: 240;
         font-size: 18px;
-        display: block;
-    }
-    .material-icons {
-        color: white;
-        margin-right: 10px;
-    }
-
-    .presentacion-hamburguesa h2 {
-        font-size: 24px;
-        padding: 20px 20px 0px 20px;
-    }
-
-
-    .contenedor-hamburguesa .card-hamburguesas {
-        width: 280px;
-        height: 250px;
-        margin: 30px 40px 10px 40px;
-    }
-    .contenedor-hamburguesa .card-hamburguesas h3 {
-        font-size: 24px;
-    }
-
-    /*MENU HAMBURGUESA DE LAS OTRAS PESTANAS*/
-    .barra {
-        display: none;
-        background-image: none;
-        position: relative;
-        width: auto;
-        height: 220px;
-        background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-    }
-    .menuhamburguesa2 label {
-        display: block;
-        cursor: pointer;
-    }
-    #menu-toggle:checked + label + nav .barra{
-        display: block;
-    }
-    .barra ul {
-        list-style-type: none;
-    }
+        display: block; }
+  .menuhamburguesa {
+    width: 100%;
+    height: 308px;
+    text-align: right;
+    background-image: url("../assets/img/hamburguesaprincipal1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .menuhamburguesa label {
+      display: block;
+      cursor: pointer; }
+  #menu-toggle:checked + label + nav .barra-inicio {
+    display: block; }
+  nav {
+    position: relative; }
+  .material-icons {
+    color: white;
+    margin-right: 10px; }
+  .barra {
+    justify-content: none;
+    display: none;
+    background-image: none;
+    position: relative;
+    width: 100%;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999; }
     .barra li {
-        padding: 10px 20px;
-    }
-    .barra li a {
+      height: 42px;
+      padding: 20px; }
+      .barra li a {
         color: black;
         font-weight: 240;
-        font-size: 16px;
-        display: block;
-    }
-    .menuhamburguesa2 {
-        width: 100%;
-        height: 100%;
-        text-align: right;
-        background-color: #0F3D3E;
-    }
-
-    /*FOOTER*/
-    .contenedor-footer {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 10px;
-    }
-    .contenedor-contactos {
-        width: auto; 
-        height: 160px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .contenedor-contactos h2 {
-        font-size: 24px;
-    }
-    .contenedor-contactos iframe {
-        width: 100%;
-        height: 140px;
-    }
-
-    /*INGREDIENTES*/
-    .imagen-ingredientes h2 {
-        font-size: 30px;
-    }
-    .imagen-ingredientes p {
         font-size: 18px;
-        padding: 20px;
-    }
-    .tipos {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
-        "div1"
-        "div2"
-        "div3"
-        "div4"
-        ;
-    }
-    .div1 h3 {
-        font-size: 20px;
-        text-align: center;
-    }
-    .div1 p {
-        font-size: 16px;
-        text-align: justify;
-    }
-    .div2 h3 {
-        font-size: 20px;
-        text-align: center;
-    }
-    .div2 p {
-        font-size: 16px;
-        text-align: justify;
-    }
-    .div3 h3 {
-        font-size: 20px;
-        text-align: center;
-    }
-    .div3 p {
-        font-size: 16px;
-        text-align: justify;
-    }
-    .div4 h3 {
-        font-size: 20px;
-        text-align: center;
-    }
-    .div4 p {
-        font-size: 16px;
-        text-align: justify;
-    }
-}
+        display: block; }
+  #menu-toggle:checked + label + nav .barra {
+    display: block; }
+  .menuhamburguesa2 {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    background-color: #0F3D3E; }
+    .menuhamburguesa2 label {
+      display: block;
+      cursor: pointer; }
+  .presentacion-hamburguesa h2 {
+    font-size: 24px;
+    padding: 20px 20px 0px 20px; }
+  .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
+    width: 250px;
+    height: 250px;
+    margin: 30px 40px 30px 40px; }
+  .menu h2 {
+    font-size: 34px; }
+  .cortes h2 {
+    font-size: 36px; }
+  .cortes p {
+    font-size: 18px;
+    padding-top: 20px; }
+  .tipos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "div1" "div2" "div3" "div4"; }
+  .contenedor-footer {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 10px; }
+    .contenedor-footer .contenedor-contactos {
+      width: 250px;
+      height: 150px;
+      text-align: center;
+      margin-bottom: 20px; }
+      .contenedor-footer .contenedor-contactos h2 {
+        font-size: 22px; }
+      .contenedor-footer .contenedor-contactos p {
+        font-size: 16px; }
+      .contenedor-footer .contenedor-contactos iframe {
+        width: 240px;
+        height: 140px;
+        padding-bottom: 10px; } }

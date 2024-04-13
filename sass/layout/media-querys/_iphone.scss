@@ -1,0 +1,151 @@
+@media (min-width:320px) and (max-width:744px){
+    .header-barra-inicio {
+        h1{
+            font-size: 40px;
+        }
+    }
+
+    .barra-inicio {
+        justify-content: none;
+        display: none;
+        background-image: none;
+        position: relative;
+        width: 100%;
+        height: 270px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        li {
+            height: 42px;
+            padding: 20px;
+            a {
+                color: black;
+                font-weight: 240;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+    .menuhamburguesa {
+        width: 100%;
+        height: 308px;
+        text-align: right;
+        background-image: url("../assets/img/hamburguesaprincipal1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        label {
+            display: block;
+            cursor: pointer;
+        }
+    }
+    #menu-toggle:checked + label + nav .barra-inicio {
+        display: block;
+    }
+    nav {
+        position: relative;
+    }
+    .material-icons {
+        color: white;
+        margin-right: 10px;
+    }
+
+    .barra{
+        justify-content: none;
+        display: none;
+        background-image: none;
+        position: relative;
+        width: 100%;
+        height: 230px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        li {
+            height: 42px;
+            padding: 20px;
+            a {
+                color: black;
+                font-weight: 240;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+    #menu-toggle:checked + label + nav .barra {
+        display: block;
+    }
+    .menuhamburguesa2 {
+        width: 100%;
+        height: 100%;
+        text-align: right;
+        background-color: #0F3D3E;
+        label{
+            display: block;
+            cursor: pointer;
+        }
+    }
+    
+    .presentacion-hamburguesa {
+        h2 {
+            font-size: 24px;
+            padding: 20px 20px 0px 20px;
+        }
+    }
+
+    .contenedor-hamburguesa{
+        .card-hamburguesas {
+            width: 250px;
+            height: 250px;
+            margin: 30px 40px 30px 40px;
+        }
+    }
+
+    .menu{
+        h2{
+            font-size: 34px;
+        }
+    }
+
+    .cortes{
+        h2{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            padding-top: 20px;
+        }
+    }
+    .tipos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "div1"
+        "div2"
+        "div3"
+        "div4"
+        ;
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 10px;
+        .contenedor-contactos{
+            width: 250px;
+            height: 150px;
+            text-align: center;
+            margin-bottom: 20px;
+            h2{
+                font-size: 22px;
+            }
+            p{
+                font-size: 16px;
+            }
+            iframe{
+                width: 240px;
+                height: 140px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

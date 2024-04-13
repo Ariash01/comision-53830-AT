@@ -1,0 +1,17 @@
+main {
+    background-color: #F1F1F1;
+    width: 100%;
+}
+
+.presentacion-hamburguesa {
+    @include tamano;
+    h2 {
+        @include tipografia("Roboto Mono", bold, normal, 40px, black, none, center, 4px solid #decc96 );
+        padding-top: 50px;
+    }
+}
+
+.contenedor-hamburguesa {
+    @include tamano;
+    @include displayType(flex, wrap, none, center);
+}

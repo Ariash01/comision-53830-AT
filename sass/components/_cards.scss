@@ -1,0 +1,70 @@
+.card-hamburguesas {
+    width: 300px;
+    height: 320px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 80px 50px 80px 50px;
+    transition: all 0.25s;
+    background-color: map-get($colores, colorFuenteH1a);
+    border: 1px solid black;
+    text-align: center;
+    &:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+    h3{
+        @include tipografia("Saira Semi Condensed", 300, normal, 30px, #0F3D3E, 15px, none, none);
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        background-size: contain;
+        padding: 15px;
+    }
+}
+
+.card-carne{
+    @extend .card-hamburguesas;
+    height: 450px;
+    margin: 50px 30px 50px 30px;
+    h4{
+        @include tipografia("Roboto Mono", bold, normal, 30px, #0F3D3E, 20px, center, none);
+    }
+    p{
+        @include tipografia("Saira Semi Condensed", normal, normal, 20px, #0F3D3E, none, justify, none);
+        padding: 5px 20px 5px 20px;
+        line-height: 1.5;
+    }
+}
+
+.card-pollo{
+    @extend .card-carne;
+    height: 470px;
+}
+
+.card-bebidas{
+    @extend .card-carne;
+    height: 360px;
+    width: 250px;
+    h4{
+        padding: 5px;
+    }
+}
+
+.card {
+    @extend .card-hamburguesas;
+    width: 450px;
+    height: 500px;
+    margin: 50px;
+    transition: all 0.25s;
+    background-color: map-get($colores, colorFuenteH1a );
+    margin-top: 80px;
+    h2{
+        @include tipografia("Roboto Mono", 250, normal, 40px, #0F3D3E , 40px, center, none);
+    }
+    p{
+        @include tipografia("Saira Semi Condensed", 280, normal, 20px, black, none, justify, none);
+        padding: 30px
+    }
+}

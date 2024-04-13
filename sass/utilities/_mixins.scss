@@ -1,0 +1,23 @@
+@mixin tipografia($font, $weight, $style, $size, $color, $margin-top, $text-align, $border){
+    font-family: $font;
+    font-weight: $weight;
+    font-style: $style;
+    font-size: $size;
+    color: $color;
+    margin-top: $margin-top;
+    text-align: $text-align;
+    border-bottom: $border;
+}
+
+@mixin displayType($display, $wrap, $flex-direct, $center){
+    display: $display;
+    flex-wrap: $wrap;
+    flex-direction: $flex-direct;
+    justify-content: $center;
+}
+
+
+@mixin tamano{
+    height: 100%;
+    width: 100%;
+}

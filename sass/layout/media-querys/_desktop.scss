@@ -1,0 +1,80 @@
+@media(max-width:1440px) and (min-width:1240px) {
+    .barra-inicio{
+        height: 800px;
+    }
+    .contenedor-hamburguesa{
+        .card-hamburguesas{
+            width: 350px;
+            height: 350px;
+            margin: 20px
+        }
+    }
+
+    .imagen-historia{
+    .imagen-local{
+        width: 600px; 
+        margin-right: 10px;
+        }
+    }
+
+    .contenedor-footer{
+        .contenedor-contactos{
+            width: 380px;
+            height: 280px;
+            iframe{
+                width: 380px;
+                height: 230px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1239px){
+    .barra-inicio {
+        height: 600px;
+    }
+    .presentacion-hamburguesa h2 {
+        font-size: 36px;
+    }
+    .contenedor-hamburguesa {
+        height: 800px;
+        .card-hamburguesas{
+            margin: 40px 80px 40px 80px;
+        }
+    }
+
+    .contenedor-historia {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-areas: 
+        "imagen-historia imagen-historia"
+        "sub-historia1 sub-historia2";
+        gap: 20px;
+    }
+    .sub-historia1{
+            h3{
+                font-size: 32px; 
+            }
+    }
+    .sub-historia2{
+        margin-right: 45px;
+    }
+    
+    .imagen-historia {
+        .imagen-local{
+            width: 500px;
+            height: 600px;
+        }
+    }
+    
+    .contenedor-footer{
+        .contenedor-contactos{
+            width: 360px;
+            height: 260px;
+            iframe{
+                width: 350px;
+                height: 200px;
+            }
+        }
+    }
+}

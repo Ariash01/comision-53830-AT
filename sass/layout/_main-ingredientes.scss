@@ -1,0 +1,58 @@
+.cortes{
+    @include tamano;
+    h2{
+        @include tipografia("Saira Semi Condensed", normal, normal, 60px, #0F3D3E, none, center, 4px solid #decc96);
+        padding-top: 30px;
+    }
+    p{
+        @include tipografia("Saira Semi Condensed", normal, normal, 24px, black, none, center, none);
+        padding-top: 10px;
+    }
+}
+
+.tipos{
+    @include tamano;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "div1 div2"
+    "div3 div4"
+    ;
+    gap: 20px;
+}
+
+.div1{
+    margin: 40px;
+    padding: 40px;
+    grid-area: div1;
+    border: 2px solid #0F3D3E;
+    border-radius: 10px;
+    transition: all 0.25s;
+    background-color: map-get($colores, colorFuenteH1a );
+    &:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
+    }
+    h3{
+        @include tipografia("Roboto Mono", bold, normal, 30px, black, none, none, none);
+    }
+    p{
+        @include tipografia("Saira Semi Condensed", normal, normal, 20px, black, none, justify, none);
+    }
+}
+
+.div2{
+    @extend .div1;
+    grid-area: div2;
+}
+
+.div3{
+    @extend .div1;
+    grid-area: div3;
+}
+
+.div4{
+    @extend .div1;
+    grid-area: div4;
+}
