@@ -157,7 +157,8 @@ main {
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "div1 div2" "div3 div4";
+  grid-template-areas: "div1 div2"
+ "div3 div4";
   gap: 20px; }
 
 .div1, .div2, .div3, .div4 {
@@ -220,7 +221,8 @@ main {
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "sub-historia1 imagen-historia" "sub-historia2 imagen-historia";
+  grid-template-areas: "sub-historia1 imagen-historia"
+ "sub-historia2 imagen-historia";
   gap: 20px; }
 
 .sub-historia1, .sub-historia2, .imagen-historia {
@@ -618,7 +620,8 @@ footer {
   .contenedor-historia {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "imagen-historia imagen-historia" "sub-historia1 sub-historia2";
+    grid-template-areas: "imagen-historia imagen-historia"
+ "sub-historia1 sub-historia2";
     gap: 20px; }
   .sub-historia1 h3, .sub-historia2 h3, .imagen-historia h3 {
     text-align: center;
@@ -669,7 +672,8 @@ footer {
   .contenedor-historia {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "imagen-historia imagen-historia" "sub-historia1 sub-historia2";
+    grid-template-areas: "imagen-historia imagen-historia"
+ "sub-historia1 sub-historia2";
     gap: 10px; }
   .sub-historia1 h3, .sub-historia2 h3, .imagen-historia h3 {
     font-size: 30px;
@@ -784,13 +788,18 @@ footer {
     padding-top: 20px; }
   .tipos {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "div1" "div2" "div3" "div4"; }
+    grid-template-areas: "div1"
+ "div2"
+ "div3"
+ "div4"; }
   .contenedor-general h2 {
     font-size: 30px; }
   .contenedor-historia {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "imagen-historia" "sub-historia1" "sub-historia2";
+    grid-template-areas: "imagen-historia"
+ "sub-historia1"
+ "sub-historia2";
     gap: 10px; }
   .sub-historia1, .sub-historia2, .imagen-historia {
     margin: 10px;
