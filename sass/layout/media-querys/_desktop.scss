@@ -1,6 +1,6 @@
 @media(max-width:1440px) and (min-width:1240px) {
     .barra-inicio{
-        height: 800px;
+        height: 700px;
     }
     .contenedor-hamburguesa{
         .card-hamburguesas{
@@ -10,9 +10,14 @@
         }
     }
 
+    .carousel-item{
+        .imagen-carousel {
+            height: 600px;
+        }
+    }
+
     .imagen-historia{
     .imagen-local{
-        width: 600px; 
         margin-right: 10px;
         }
     }
@@ -29,7 +34,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1239px){
+@media (min-width: 1024px) and (max-width: 1240px){
     .barra-inicio {
         height: 600px;
     }
@@ -43,6 +48,12 @@
         }
     }
 
+    .carousel-item{
+        .imagen-carousel {
+            height: 600px;
+        }
+    }
+
     .contenedor-historia {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
@@ -53,6 +64,7 @@
     }
     .sub-historia1{
             h3{
+                text-align: center;
                 font-size: 32px; 
             }
     }
@@ -62,8 +74,8 @@
     
     .imagen-historia {
         .imagen-local{
-            width: 500px;
-            height: 600px;
+            width: 600px;
+            height: 800px;
         }
     }
     

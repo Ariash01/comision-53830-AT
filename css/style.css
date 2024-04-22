@@ -41,7 +41,7 @@ main {
     margin-top: none;
     text-align: center;
     border-bottom: 4px solid #decc96;
-    padding-top: 50px; }
+    padding-top: 20px; }
 
 .contenedor-hamburguesa {
   height: 100%;
@@ -118,6 +118,14 @@ main {
   flex-direction: none;
   justify-content: center;
   margin: auto; }
+
+.carousel-item {
+  padding-top: 10px; }
+  .carousel-item .imagen-carousel {
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+    border-radius: 20px; }
 
 .cortes {
   height: 100%;
@@ -217,7 +225,7 @@ main {
 
 .sub-historia1, .sub-historia2, .imagen-historia {
   grid-area: sub-historia1;
-  margin-left: 45px;
+  margin-left: 60px;
   place-items: center; }
   .sub-historia1 h3, .sub-historia2 h3, .imagen-historia h3 {
     font-family: "Roboto Mono";
@@ -249,8 +257,8 @@ main {
   align-items: center; }
   .imagen-historia .imagen-local {
     margin-top: 60px;
-    width: 700px;
-    height: 900px;
+    width: 650px;
+    height: 780px;
     padding: 10px;
     border: 2px solid #000;
     border-radius: 5px; }
@@ -279,29 +287,24 @@ main {
   justify-content: center;
   margin: auto; }
 
-.contenedor-general-contactos {
-  height: 100%;
-  width: 100%; }
-
 .contactanos-c {
-  height: 100%;
-  width: 100%;
   background-color: white;
   border-bottom: 10px solid #decc96; }
   .contactanos-c h1 {
     font-family: "Roboto Mono";
     font-weight: bold;
     font-style: normal;
-    font-size: 40px;
+    font-size: 46px;
     color: black;
-    margin-top: 40px;
+    margin-top: none;
     text-align: center;
-    border-bottom: none; }
+    border-bottom: none;
+    padding-top: 20px; }
   .contactanos-c p {
     font-family: "Saira Semi Condensed";
     font-weight: 350;
     font-style: normal;
-    font-size: 18px;
+    font-size: 22px;
     color: black;
     margin-top: 10px;
     text-align: center;
@@ -309,22 +312,18 @@ main {
     margin-bottom: 10px; }
 
 .formulario {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-wrap: none;
   flex-direction: none;
   justify-content: center;
-  height: 500px;
   background-color: white;
-  padding: 50px;
-  margin-bottom: 20px; }
+  padding: 20px; }
 
 .legend-form {
   font-family: "Saira Semi Condensed";
   font-weight: bold;
   font-style: normal;
-  font-size: 25px;
+  font-size: 26px;
   color: black;
   margin-top: none;
   text-align: none;
@@ -347,33 +346,36 @@ main {
 .input-form {
   background-color: #F8F3F3;
   border: none;
-  width: 200px;
+  width: 400px;
   height: 50px;
-  border-radius: 8px;
-  margin: 10px 20px 20px 20px;
-  padding: 10px; }
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px; }
 
-.boton-enviar {
-  font-family: "Saira Semi Condensed";
-  font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
-  color: black;
-  margin-top: none;
+.caja-boton {
+  width: 100%;
+  height: 100%;
   text-align: center;
-  border-bottom: none;
-  width: 100px;
-  height: 60px;
-  background-color: #F8F3F3;
-  margin: 20px 50px 20px 280px;
-  padding: 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.25s; }
-  .boton-enviar:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  justify-content: center; }
+  .caja-boton .boton-enviar {
+    font-family: "Saira Semi Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    margin-top: none;
+    text-align: center;
+    border-bottom: none;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #F8F3F3;
+    border-radius: 15px;
+    transition: all 0.25s;
+    margin-bottom: 10px; }
+    .caja-boton .boton-enviar:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
 footer {
   height: 100%;
@@ -430,8 +432,10 @@ footer {
   background-repeat: no-repeat;
   background-image: url("../assets/img/hamburguesaprincipal1.jpg");
   width: 100%;
-  height: 1000px;
-  background-size: cover; }
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box; }
   .barra-inicio li {
     height: 100%;
     width: 100%;
@@ -457,7 +461,9 @@ footer {
   height: 35px;
   text-align: center;
   align-items: center;
-  background-color: #0F3D3E; }
+  background-color: #0F3D3E;
+  margin-bottom: 0;
+  padding-left: 0; }
   .barra li {
     height: auto;
     width: 100%; }
@@ -582,13 +588,14 @@ footer {
 
 @media (max-width: 1440px) and (min-width: 1240px) {
   .barra-inicio {
-    height: 800px; }
+    height: 700px; }
   .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
     width: 350px;
     height: 350px;
     margin: 20px; }
+  .carousel-item .imagen-carousel {
+    height: 600px; }
   .imagen-historia .imagen-local {
-    width: 600px;
     margin-right: 10px; }
   .contenedor-footer .contenedor-contactos {
     width: 380px;
@@ -597,7 +604,7 @@ footer {
       width: 380px;
       height: 230px; } }
 
-@media (min-width: 1024px) and (max-width: 1239px) {
+@media (min-width: 1024px) and (max-width: 1240px) {
   .barra-inicio {
     height: 600px; }
   .presentacion-hamburguesa h2 {
@@ -606,18 +613,21 @@ footer {
     height: 800px; }
     .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
       margin: 40px 80px 40px 80px; }
+  .carousel-item .imagen-carousel {
+    height: 600px; }
   .contenedor-historia {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "imagen-historia imagen-historia" "sub-historia1 sub-historia2";
     gap: 20px; }
   .sub-historia1 h3, .sub-historia2 h3, .imagen-historia h3 {
+    text-align: center;
     font-size: 32px; }
   .sub-historia2 {
     margin-right: 45px; }
   .imagen-historia .imagen-local {
-    width: 500px;
-    height: 600px; }
+    width: 600px;
+    height: 800px; }
   .contenedor-footer .contenedor-contactos {
     width: 360px;
     height: 260px; }
@@ -626,9 +636,10 @@ footer {
       height: 200px; } }
 
 @media (max-width: 1024px) and (min-width: 744px) {
+  .header-barra-inicio h1 {
+    font-size: 80px; }
   .barra-inicio {
-    height: 550px;
-    background-size: cover; }
+    height: 600px; }
     .barra-inicio li a {
       font-size: 16px;
       padding: 10px; }
@@ -643,6 +654,8 @@ footer {
       width: 280px;
       height: 280px;
       margin: 30px; }
+  .carousel-item .imagen-carousel {
+    height: 600px; }
   .cortes h2 {
     font-size: 50px; }
   .cortes p {
@@ -651,20 +664,43 @@ footer {
     margin: 20px; }
     .div1 p, .div2 p, .div3 p, .div4 p {
       font-size: 18px; }
+  .contenedor-general h2 {
+    font-size: 40px; }
+  .contenedor-historia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imagen-historia imagen-historia" "sub-historia1 sub-historia2";
+    gap: 10px; }
+  .sub-historia1 h3, .sub-historia2 h3, .imagen-historia h3 {
+    font-size: 30px;
+    text-align: center; }
+  .sub-historia1 p, .sub-historia2 p, .imagen-historia p {
+    font-size: 20px; }
+  .sub-historia2 {
+    margin-right: 35px; }
+  .imagen-historia .imagen-local {
+    margin-top: 30px;
+    width: 500px;
+    height: 650px; }
+  .legend-form {
+    padding: 10px;
+    font-size: 20px; }
+  .label-form {
+    font-size: 18px; }
   .contenedor-footer .contenedor-contactos {
     width: 320px;
-    height: 200px; }
+    height: 150px; }
     .contenedor-footer .contenedor-contactos h2 {
       font-size: 22px; }
     .contenedor-footer .contenedor-contactos p {
       font-size: 18px; }
     .contenedor-footer .contenedor-contactos iframe {
-      width: 300px;
-      height: 180px; } }
+      width: 200px;
+      height: 120px; } }
 
 @media (min-width: 320px) and (max-width: 744px) {
   .header-barra-inicio h1 {
-    font-size: 40px; }
+    font-size: 60px; }
   .barra-inicio {
     justify-content: none;
     display: none;
@@ -690,7 +726,8 @@ footer {
     background-image: url("../assets/img/hamburguesaprincipal1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    background-origin: content-box; }
     .menuhamburguesa label {
       display: block;
       cursor: pointer; }
@@ -736,6 +773,8 @@ footer {
     width: 250px;
     height: 250px;
     margin: 30px 40px 30px 40px; }
+  .carousel-item .imagen-carousel {
+    height: 400px; }
   .menu h2 {
     font-size: 34px; }
   .cortes h2 {
@@ -746,6 +785,51 @@ footer {
   .tipos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "div1" "div2" "div3" "div4"; }
+  .contenedor-general h2 {
+    font-size: 30px; }
+  .contenedor-historia {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "imagen-historia" "sub-historia1" "sub-historia2";
+    gap: 10px; }
+  .sub-historia1, .sub-historia2, .imagen-historia {
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .sub-historia1 h3, .sub-historia2 h3, .imagen-historia h3 {
+      font-size: 28px;
+      text-align: center;
+      font-weight: 300; }
+    .sub-historia1 p, .sub-historia2 p, .imagen-historia p {
+      font-size: 18px;
+      font-weight: 200; }
+  .imagen-historia .imagen-local {
+    margin-top: 10px;
+    width: 250px;
+    height: 400px; }
+  .mas-nosotros h2 {
+    margin-top: 50px; }
+  .card {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px; }
+    .card p {
+      font-size: 18px; }
+  .contactanos-c h1 {
+    font-size: 40px; }
+  .contactanos-c p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .legend-form {
+    font-size: 18px;
+    margin-left: none;
+    padding: 5px; }
+  .label-form {
+    font-size: 18px; }
+  .input-form {
+    width: 250px;
+    height: 50px; }
   .contenedor-footer {
     flex-direction: column;
     align-items: center;

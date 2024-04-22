@@ -1,7 +1,11 @@
 @media (max-width:1024px) and (min-width: 744px){
+    .header-barra-inicio{
+        h1{
+            font-size: 80px;
+        }
+    }
     .barra-inicio {
-        height: 550px;
-        background-size: cover;
+        height: 600px;
         li{
             a{
                 font-size: 16px;
@@ -24,6 +28,13 @@
             margin: 30px;
         }
     }
+
+    .carousel-item{
+        .imagen-carousel {
+            height: 600px;
+        }
+    }
+
     .cortes{
         h2{
             font-size: 50px;
@@ -38,11 +49,51 @@
             font-size: 18px;
         }
     }
+    .contenedor-general{
+        h2{
+            font-size: 40px;
+        }
+    }
+    .contenedor-historia {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-areas: 
+        "imagen-historia imagen-historia"
+        "sub-historia1 sub-historia2";
+        gap: 10px;
+    }
+    .sub-historia1{
+            h3{
+                font-size: 30px; 
+                text-align: center;
+            }
+            p{
+                font-size: 20px;
+            }
+    }
+    .sub-historia2{
+        margin-right: 35px;
+    }
+    .imagen-historia {
+        .imagen-local{
+            margin-top: 30px;
+            width: 500px;
+            height: 650px;
+        }
+    }
+
+    .legend-form{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .label-form{
+        font-size: 18px;
+    }
 
     .contenedor-footer{
         .contenedor-contactos{
             width: 320px;
-            height: 200px;
+            height: 150px;
             h2{
                 font-size: 22px;
             }
@@ -50,8 +101,8 @@
                 font-size: 18px;
             }
             iframe{
-                width: 300px;
-                height: 180px;
+                width: 200px;
+                height: 120px;
             }
         }
     }

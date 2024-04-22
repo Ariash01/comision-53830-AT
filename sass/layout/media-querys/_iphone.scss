@@ -1,7 +1,7 @@
 @media (min-width:320px) and (max-width:744px){
     .header-barra-inicio {
         h1{
-            font-size: 40px;
+            font-size: 60px;
         }
     }
 
@@ -34,6 +34,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center; 
+        background-origin: content-box;
         label {
             display: block;
             cursor: pointer;
@@ -100,6 +101,12 @@
         }
     }
 
+    .carousel-item{
+        .imagen-carousel {
+            height: 400px;
+        }
+    }
+
     .menu{
         h2{
             font-size: 34px;
@@ -123,6 +130,81 @@
         "div3"
         "div4"
         ;
+    }
+
+    .contenedor-general{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .contenedor-historia {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-areas: 
+        "imagen-historia"
+        "sub-historia1"
+        "sub-historia2";
+        gap: 10px;
+    }
+    .sub-historia1{
+        margin: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+            h3{
+                font-size: 28px; 
+                text-align: center;
+                font-weight: 300;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 200;
+            }
+    }
+    .imagen-historia {
+        .imagen-local{
+            margin-top: 10px;
+            width: 250px;
+            height: 400px;
+        }
+    }
+
+    .mas-nosotros {
+        h2{
+            margin-top: 50px;
+        }
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .contactanos-c{
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .legend-form{
+        font-size: 18px;
+        margin-left: none;
+        padding: 5px;
+    }
+    .label-form{
+        font-size: 18px;
+    }
+    .input-form {
+        width: 250px;
+        height: 50px;
     }
 
     .contenedor-footer{

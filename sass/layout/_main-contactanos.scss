@@ -1,31 +1,24 @@
-.contenedor-general-contactos{
-    @include tamano;
-}
-
 .contactanos-c{
-    @include tamano;
     background-color: white;
     border-bottom: 10px solid #decc96;
     h1{
-        @include tipografia("Roboto Mono", bold, normal, 40px, black, 40px, center, none );
+        @include tipografia("Roboto Mono", bold, normal, 46px, black, none, center, none );
+        padding-top: 20px;
     }
     p{
-        @include tipografia("Saira Semi Condensed", 350, normal, 18px, black, 10px, center, none);
+        @include tipografia("Saira Semi Condensed", 350, normal, 22px, black, 10px, center, none);
         margin-bottom: 10px;
     }
 }
 
 .formulario{
-    @include tamano;
     @include displayType(flex, none, none, center);
-    height: 500px;
     background-color: map-get($colores, colorFuenteH1a );
-    padding: 50px;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .legend-form {
-    @include tipografia("Saira Semi Condensed", bold, normal, 25px, black, none, none, none );
+    @include tipografia("Saira Semi Condensed", bold, normal, 26px, black, none, none, none );
     padding: 30px;
     margin-left: 30px;
 }
@@ -39,26 +32,31 @@
 .input-form {
     background-color: map-get($colores, colorForm);
     border: none;
-    width: 200px;
+    width: 400px;
     height: 50px;
-    border-radius: 8px;
-    margin: 10px 20px 20px 20px;
+    border-radius: 15px;
     padding: 10px;
+    margin: 20px;
 }
 
-.boton-enviar {
-    @include tipografia("Saira Semi Condensed", 300, normal, 15px, black, none, center, none);
-    width: 100px;
-    height: 60px;
-    background-color: map-get($colores, colorForm );
-    margin: 20px 50px 20px 280px;
-    padding: 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.25s;
-    &:hover{
-        transform: translateY(-2px);
-        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+.caja-boton{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    .boton-enviar {
+        @include tipografia("Saira Semi Condensed", 300, normal, 15px, black, none, center, none);
+        padding: 20px;
+        border: none;
+        cursor: pointer;
+        background-color: map-get($colores, colorForm );
+        border-radius: 15px;
+        transition: all 0.25s;
+        margin-bottom: 10px;
+        &:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        }
     }
 }

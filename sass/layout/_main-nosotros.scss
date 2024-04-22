@@ -21,7 +21,7 @@
 
 .sub-historia1{
     grid-area: sub-historia1;
-    margin-left: 45px;
+    margin-left: 60px;
     place-items: center;
         h3{
             @include tipografia("Roboto Mono", 250, normal, 40px, #0F3D3E, 40px, left, 4px solid #decc96);
@@ -47,8 +47,8 @@
     align-items: center;
     .imagen-local{
         margin-top: 60px;
-        width: 700px; 
-        height: 900px; 
+        width: 650px; 
+        height: 780px; 
         padding: 10px; 
         border: 2px solid #000;
         border-radius: 5px; 
