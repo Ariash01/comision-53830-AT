@@ -4,8 +4,12 @@ BOCADO
 Tecnologías usadas:
 - HTML
 - CSS
+- SASS
 - Git
 - GitHub
+
+Optimización:
+- SEO
 
 Responsive
 - Inicio
@@ -16,7 +20,8 @@ Boostrap aplicado:
 - Carousel en "Ingredientes"
 
 Grid aplicado:
-- Tipos de carnes "Ingredientes"
+- Tipos de carnes en "Ingredientes"
+- Quienes somos en "Nosotros"
 
 Flebox aplicado:
 - Cards, nav, footer, etc.
