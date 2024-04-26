@@ -3,10 +3,16 @@
         height: 700px;
     }
     .contenedor-hamburguesa{
+        height: 100%;
         .card-hamburguesas{
-            width: 350px;
-            height: 350px;
-            margin: 20px
+            width: 380px;
+            height: 380px;
+            margin: 40px
+        }
+    }
+    .contenedor-resenas{
+        .card-resena1{
+            width: 80%;
         }
     }
 
@@ -38,13 +44,18 @@
     .barra-inicio {
         height: 600px;
     }
-    .presentacion-hamburguesa h2 {
-        font-size: 36px;
-    }
     .contenedor-hamburguesa {
-        height: 800px;
+        height: 100%;
+        margin-top: 20px;
         .card-hamburguesas{
+            width: 350px;
+            height: 340px;
             margin: 40px 80px 40px 80px;
+        }
+    }
+    .contenedor-resenas{
+        .card-resena1{
+            width: 100%;
         }
     }
 

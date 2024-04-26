@@ -26,22 +26,19 @@
     margin: 0; }
 
 main {
-  background-color: #F1F1F1;
+  background-color: #f6f6f6;
   width: 100%; }
 
-.presentacion-hamburguesa {
-  height: 100%;
-  width: 100%; }
-  .presentacion-hamburguesa h2 {
-    font-family: "Roboto Mono";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 40px;
-    color: black;
-    margin-top: none;
-    text-align: center;
-    border-bottom: 4px solid #decc96;
-    padding-top: 20px; }
+.presentacion-hamburguesa h2 {
+  font-family: "Saira Semi Condensed";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
+  color: #0F3D3E;
+  margin-top: none;
+  text-align: center;
+  border-bottom: 4px solid #decc96;
+  padding-top: 5px; }
 
 .contenedor-hamburguesa {
   height: 100%;
@@ -50,6 +47,78 @@ main {
   flex-wrap: wrap;
   flex-direction: none;
   justify-content: center; }
+
+.contenedor-resenas {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: none;
+  justify-content: center;
+  text-align: center; }
+  .contenedor-resenas .card-resena1, .contenedor-resenas .card-resena2 {
+    width: 60%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.25s;
+    margin: 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "c4 c3"
+ "c4 c3"
+ "c1 c3"
+ "c2 c3"; }
+    .contenedor-resenas .card-resena1:hover, .contenedor-resenas .card-resena2:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.c1 {
+  grid-area: c1;
+  font-family: "Roboto Mono";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  color: #0F3D3E;
+  margin-top: 20px;
+  text-align: center;
+  border-bottom: none; }
+
+.c2 {
+  grid-area: c2;
+  font-family: "Saira Semi Condensed";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  color: #0F3D3E;
+  margin-top: none;
+  text-align: justify;
+  border-bottom: none; }
+
+.c3 {
+  grid-area: c3;
+  font-family: "Saira Semi Condensed";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  color: #0F3D3E;
+  margin-top: none;
+  text-align: justify;
+  border-bottom: none;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  padding: 50px; }
+
+.c4 {
+  grid-area: c4;
+  border-radius: 80%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  justify-self: center;
+  align-self: center; }
 
 .menu h2 {
   font-family: "Saira Semi Condensed";
@@ -481,12 +550,12 @@ footer {
       text-decoration: none; }
 
 .card-hamburguesas, .card-carne, .card-pollo, .card-bebidas, .card {
-  width: 300px;
+  width: 320px;
   height: 320px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 80px 50px 80px 50px;
+  margin: 40px;
   transition: all 0.25s;
   background-color: white;
   border: 1px solid black;
@@ -498,7 +567,7 @@ footer {
     font-family: "Saira Semi Condensed";
     font-weight: 300;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
     color: #0F3D3E;
     margin-top: 15px;
     text-align: none;
@@ -543,11 +612,11 @@ footer {
     padding: 5px; }
 
 .card {
+  border: 1px solid #0F3D3E;
   width: 450px;
   height: 500px;
   margin: 50px;
   transition: all 0.25s;
-  background-color: white;
   margin-top: 80px; }
   .card h2 {
     font-family: "Roboto Mono";
@@ -591,10 +660,14 @@ footer {
 @media (max-width: 1440px) and (min-width: 1240px) {
   .barra-inicio {
     height: 700px; }
-  .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
-    width: 350px;
-    height: 350px;
-    margin: 20px; }
+  .contenedor-hamburguesa {
+    height: 100%; }
+    .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
+      width: 380px;
+      height: 380px;
+      margin: 40px; }
+  .contenedor-resenas .card-resena1, .contenedor-resenas .card-resena2 {
+    width: 80%; }
   .carousel-item .imagen-carousel {
     height: 600px; }
   .imagen-historia .imagen-local {
@@ -609,12 +682,15 @@ footer {
 @media (min-width: 1024px) and (max-width: 1240px) {
   .barra-inicio {
     height: 600px; }
-  .presentacion-hamburguesa h2 {
-    font-size: 36px; }
   .contenedor-hamburguesa {
-    height: 800px; }
+    height: 100%;
+    margin-top: 20px; }
     .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
+      width: 350px;
+      height: 340px;
       margin: 40px 80px 40px 80px; }
+  .contenedor-resenas .card-resena1, .contenedor-resenas .card-resena2 {
+    width: 100%; }
   .carousel-item .imagen-carousel {
     height: 600px; }
   .contenedor-historia {
@@ -650,13 +726,29 @@ footer {
     height: 35px;
     width: 100%; }
   .presentacion-hamburguesa h2 {
-    font-size: 34px; }
+    font-size: 50px; }
   .contenedor-hamburguesa {
     height: 100%; }
     .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
       width: 280px;
       height: 280px;
       margin: 30px; }
+      .contenedor-hamburguesa .card-hamburguesas h3, .contenedor-hamburguesa .card-carne h3, .contenedor-hamburguesa .card-pollo h3, .contenedor-hamburguesa .card-bebidas h3, .contenedor-hamburguesa .card h3 {
+        font-size: 34px; }
+  .contenedor-resenas .card-resena1, .contenedor-resenas .card-resena2 {
+    width: 100%;
+    grid-template-areas: "c4"
+ "c1"
+ "c2"
+ "c3"; }
+  .c2 {
+    text-align: center;
+    font-size: 22px; }
+  .c3 {
+    font-size: 20px; }
+  .c4 {
+    justify-self: center;
+    align-self: center; }
   .carousel-item .imagen-carousel {
     height: 600px; }
   .cortes h2 {
@@ -771,18 +863,38 @@ footer {
       display: block;
       cursor: pointer; }
   .presentacion-hamburguesa h2 {
-    font-size: 24px;
+    font-size: 32px;
     padding: 20px 20px 0px 20px; }
+  .contenedor-resenas {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .contenedor-resenas .card-resena1, .contenedor-resenas .card-resena2 {
+      width: 100%;
+      grid-template-areas: "c4"
+ "c1"
+ "c2"
+ "c3"; }
+  .c2 {
+    text-align: center;
+    font-size: 22px; }
+  .c3 {
+    font-size: 20px;
+    padding: 12px; }
+  .c4 {
+    justify-self: center;
+    align-self: center; }
   .contenedor-hamburguesa .card-hamburguesas, .contenedor-hamburguesa .card-carne, .contenedor-hamburguesa .card-pollo, .contenedor-hamburguesa .card-bebidas, .contenedor-hamburguesa .card {
     width: 250px;
-    height: 250px;
+    height: 270px;
     margin: 30px 40px 30px 40px; }
+    .contenedor-hamburguesa .card-hamburguesas h3, .contenedor-hamburguesa .card-carne h3, .contenedor-hamburguesa .card-pollo h3, .contenedor-hamburguesa .card-bebidas h3, .contenedor-hamburguesa .card h3 {
+      font-size: 30px; }
   .carousel-item .imagen-carousel {
     height: 400px; }
   .menu h2 {
     font-size: 34px; }
   .cortes h2 {
-    font-size: 36px; }
+    font-size: 32px; }
   .cortes p {
     font-size: 18px;
     padding-top: 20px; }
@@ -810,7 +922,7 @@ footer {
       text-align: center;
       font-weight: 300; }
     .sub-historia1 p, .sub-historia2 p, .imagen-historia p {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 200; }
   .imagen-historia .imagen-local {
     margin-top: 10px;
@@ -823,7 +935,7 @@ footer {
     height: 100%;
     margin-top: 50px; }
     .card p {
-      font-size: 18px; }
+      font-size: 20px; }
   .contactanos-c h1 {
     font-size: 40px; }
   .contactanos-c p {

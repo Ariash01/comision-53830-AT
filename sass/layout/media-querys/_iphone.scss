@@ -88,16 +88,44 @@
     
     .presentacion-hamburguesa {
         h2 {
-            font-size: 24px;
+            font-size: 32px;
             padding: 20px 20px 0px 20px;
         }
+    }
+    .contenedor-resenas{
+        padding-left: 20px;
+        padding-right: 20px;
+        .card-resena1{
+            width: 100%;
+            grid-template-areas: 
+            "c4"
+            "c1"
+            "c2"
+            "c3"
+            ;
+        }
+    }
+    .c2{
+        text-align: center;
+        font-size: 22px;
+    }
+    .c3{
+        font-size: 20px;
+        padding: 12px;
+    }
+    .c4{
+        justify-self: center;
+        align-self: center; 
     }
 
     .contenedor-hamburguesa{
         .card-hamburguesas {
             width: 250px;
-            height: 250px;
+            height: 270px;
             margin: 30px 40px 30px 40px;
+            h3{
+                font-size: 30px;
+            }
         }
     }
 
@@ -115,7 +143,7 @@
 
     .cortes{
         h2{
-            font-size: 36px;
+            font-size: 32px;
         }
         p{
             font-size: 18px;
@@ -156,7 +184,7 @@
                 font-weight: 300;
             }
             p{
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: 200;
             }
     }
@@ -179,7 +207,7 @@
         height: 100%;
         margin-top: 50px;
         p{
-            font-size: 18px;
+            font-size: 20px;
         }
     }
 

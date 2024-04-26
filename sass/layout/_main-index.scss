@@ -1,17 +1,76 @@
 main {
-    background-color: #F1F1F1;
+    background-color: rgb(246, 246, 246);
     width: 100%;
 }
 
-.presentacion-hamburguesa {
-    @include tamano;
-    h2 {
-        @include tipografia("Roboto Mono", bold, normal, 40px, black, none, center, 4px solid #decc96 );
-        padding-top: 20px;
+.presentacion-hamburguesa{
+    h2{
+        @include tipografia("Saira Semi Condensed", normal, normal, 60px, #0F3D3E, none, center, 4px solid #decc96);
+        padding-top: 5px;
     }
 }
 
 .contenedor-hamburguesa {
     @include tamano;
     @include displayType(flex, wrap, none, center);
+}
+
+.contenedor-resenas{
+    @include tamano;
+    @include displayType(flex, wrap, none, center);
+    text-align: center;
+    .card-resena1{
+        width: 60%;
+        background-color: map-get($colores, colorFuenteH1a );
+        border: 2px solid black;
+        border-radius: 5px;
+        transition: all 0.25s;
+        margin: 40px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "c4 c3"
+        "c4 c3"
+        "c1 c3"
+        "c2 c3"
+        ;
+        &:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
+        }
+    }
+}
+
+.c1{
+    grid-area: c1;
+    @include tipografia("Roboto Mono", bold, normal, 30px, #0F3D3E, 20px, center, none);
+}
+
+.c2{
+    grid-area: c2;
+    @include tipografia("Saira Semi Condensed", normal, normal, 22px, #0F3D3E, none, justify, none);
+}
+
+.c3{
+    grid-area: c3;
+    @include tipografia("Saira Semi Condensed", normal, normal, 22px, #0F3D3E, none, justify, none);
+    justify-self: center;
+    align-self: center; 
+    display: flex;
+    padding: 50px;
+}
+
+.c4{
+    grid-area: c4;
+    border-radius: 80%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    justify-self: center;
+    align-self: center; 
+}
+
+.card-resena2{
+    @extend .card-resena1;
 }
