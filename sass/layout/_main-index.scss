@@ -6,7 +6,7 @@ main {
 .presentacion-hamburguesa{
     @include tamano;
     h2{
-        @include tipografia("Saira Semi Condensed", normal, normal, 40px, #0F3D3E, none, center, 4px solid #decc96);
+        @include tipografia("Saira Semi Condensed", normal, normal, 42px, #0F3D3E, none, center, 4px solid #decc96);
         padding-top: 10px;
     }
 }
