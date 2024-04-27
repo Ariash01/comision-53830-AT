@@ -17,8 +17,12 @@
     padding: 20px;
 }
 
+.form-border{
+    border-radius: 10px;
+}
+
 .legend-form {
-    @include tipografia("Saira Semi Condensed", bold, normal, 26px, black, none, none, none );
+    @include tipografia("Saira Semi Condensed", bold, normal, 30px, black, none, none, none );
     padding: 30px;
     margin-left: 30px;
 }
@@ -32,13 +36,12 @@
 .input-form {
     background-color: map-get($colores, colorForm);
     border: none;
-    width: 400px;
+    width: 600px;
     height: 50px;
     border-radius: 15px;
     padding: 10px;
     margin: 20px;
 }
-
 
 .caja-boton{
     width: 100%;
@@ -46,7 +49,7 @@
     text-align: center;
     justify-content: center;
     .boton-enviar {
-        @include tipografia("Saira Semi Condensed", 300, normal, 15px, black, none, center, none);
+        @include tipografia("Saira Semi Condensed", 300, normal, 20px, black, none, center, none);
         padding: 20px;
         border: none;
         cursor: pointer;
